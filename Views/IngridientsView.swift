@@ -13,10 +13,8 @@ struct IngridientsView: View {
     var body: some View {
         VStack {
             List(ingridientResult.ingridients) {ingridient in
-                IngridientCellView(name: ingridient.name, selected: ingridient.selected)
-                    .onTapGesture {
-                        selectIngridient(result: ingridientResult, ingridient: ingridient)
-                    }
+                IngridientCellView(ingridientResult: ingridientResult, ingridient: ingridient)
+                
             }
         }
         
@@ -31,13 +29,26 @@ struct IngridientsView_Previews: PreviewProvider {
 }
 
 struct IngridientCellView: View {
-    var name: String
-    var selected: Bool
+    var ingridientResult: IngridientResult
+    var ingridient: Ingridient
     var body: some View {
         HStack{
-            Text(name)
+            Text(ingridient.name)
             Spacer()
-            Image(systemName: selected ?  "checkmark.circle.fill" : "circle")
+            HStack{
+                Image(systemName: ingridient.selected  ?  "checkmark.circle.fill" : "circle")
+                    .onTapGesture {
+                        selectIngridient(result: ingridientResult, ingridient: ingridient)
+                    }
+                    .padding(.trailing, 10).padding(.leading, 10)
+                Button {
+                    deleteIngridient(result: ingridientResult, ingridient: ingridient)
+                } label: {
+                    Image(systemName: "trash")
+                }
+                .padding(.trailing, 5).padding(.leading, 5)
+            }
+            
         }
     }
 }

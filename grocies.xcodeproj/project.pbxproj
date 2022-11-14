@@ -11,7 +11,7 @@
 		2681016F29215DC300C9C7F6 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681016E29215DC300C9C7F6 /* Data.swift */; };
 		268101712921616600C9C7F6 /* IngridientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268101702921616600C9C7F6 /* IngridientsView.swift */; };
 		268101752921692A00C9C7F6 /* Ingridients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268101742921692A00C9C7F6 /* Ingridients.swift */; };
-		268101772921756300C9C7F6 /* Dinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268101762921756300C9C7F6 /* Dinner.swift */; };
+		268101772921756300C9C7F6 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268101762921756300C9C7F6 /* Meal.swift */; };
 		2695A12A2908CF2D004671BB /* grociesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2695A1292908CF2D004671BB /* grociesApp.swift */; };
 		2695A12C2908CF2D004671BB /* DinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2695A12B2908CF2D004671BB /* DinnerView.swift */; };
 		2695A12E2908CF2E004671BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2695A12D2908CF2E004671BB /* Assets.xcassets */; };
@@ -23,7 +23,7 @@
 		2681016E29215DC300C9C7F6 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		268101702921616600C9C7F6 /* IngridientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientsView.swift; sourceTree = "<group>"; };
 		268101742921692A00C9C7F6 /* Ingridients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingridients.swift; sourceTree = "<group>"; };
-		268101762921756300C9C7F6 /* Dinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinner.swift; sourceTree = "<group>"; };
+		268101762921756300C9C7F6 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		2695A1262908CF2D004671BB /* grocies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grocies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2695A1292908CF2D004671BB /* grociesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grociesApp.swift; sourceTree = "<group>"; };
 		2695A12B2908CF2D004671BB /* DinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerView.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		268101732921691800C9C7F6 /* entities */ = {
 			isa = PBXGroup;
 			children = (
-				268101762921756300C9C7F6 /* Dinner.swift */,
+				268101762921756300C9C7F6 /* Meal.swift */,
 				268101742921692A00C9C7F6 /* Ingridients.swift */,
 			);
 			path = entities;
@@ -173,7 +173,7 @@
 				268101752921692A00C9C7F6 /* Ingridients.swift in Sources */,
 				2695A12A2908CF2D004671BB /* grociesApp.swift in Sources */,
 				2681016F29215DC300C9C7F6 /* Data.swift in Sources */,
-				268101772921756300C9C7F6 /* Dinner.swift in Sources */,
+				268101772921756300C9C7F6 /* Meal.swift in Sources */,
 				268101712921616600C9C7F6 /* IngridientsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,11 +7,13 @@
 
 import Foundation
 
-class DinnerResult: ObservableObject {
-    @Published var dinners: [Dinner] = []
+class MealResult: ObservableObject {
+    @Published var breakfast: [Meal] = []
+    @Published var lunch: [Meal] = []
+    @Published var dinner: [Meal] = []
 }
 
-struct Dinner: Identifiable, Equatable {
+struct Meal: Identifiable, Equatable {
     let id = UUID()
     let name: String
     let ingridients: [Ingridient]
