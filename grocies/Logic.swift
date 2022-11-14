@@ -15,11 +15,17 @@ func addIngridients(result: IngridientResult, dinner: Dinner) {
 }
 
 func incrementDinnerNum(result: DinnerResult, dinner: Dinner) {
-    var index = result.dinners.firstIndex(of: dinner)
-    
+    let index = result.dinners.firstIndex(of: dinner)
     if let index = index {
         result.dinners[index].num = result.dinners[index].num + 1
     }
 }
 
+func selectIngridient(result: IngridientResult, ingridient: Ingridient) {
+    let index = result.ingridients.firstIndex(of: ingridient)
+    if let index = index {
+        result.ingridients[index].selected.toggle()
+    }
+    
+}
 

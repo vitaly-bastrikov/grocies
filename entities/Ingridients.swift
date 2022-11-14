@@ -14,5 +14,6 @@ class IngridientResult: ObservableObject {
 struct Ingridient: Identifiable, Hashable {
     let id = UUID()
     let name: String
+    var selected: Bool = false
 }
 
