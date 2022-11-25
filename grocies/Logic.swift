@@ -11,7 +11,19 @@ import Foundation
 
 func addIngridients(result: IngridientResult, meal: Meal) {
     result.ingridients.append(contentsOf: meal.ingridients)
-    result.ingridients = Array(Set(result.ingridients))
+    
+    // dedupe
+    var seenIngridients: [String] = []
+    var uniqueIngridients: [Ingridient] = []
+
+    for ingridient in result.ingridients {
+        if !seenIngridients.contains(ingridient.name) {
+            uniqueIngridients.append(ingridient)
+            seenIngridients.append(ingridient.name)
+        }
+    }
+    
+    result.ingridients = uniqueIngridients
 }
 
 func incrementDinnerNum(result: MealResult, meal: Meal) {

@@ -9,6 +9,16 @@ import Foundation
 
 
 var testLunch = [
+    
+    Meal(name: "Tuna with Rice",
+           ingridients: [
+            Ingridient(name: "Tuna"),
+            Ingridient(name: "Rice"),
+            Ingridient(name: "Avocado"),
+            Ingridient(name: "Cucumber"),
+            Ingridient(name: "Onion"),
+           ]),
+    
     Meal(name: "Buckwheat with Mushrooms",
            ingridients: [
             Ingridient(name: "Buckweat"),
@@ -19,6 +29,8 @@ var testLunch = [
            ingridients: [
             Ingridient(name: "Pasta"),
             Ingridient(name: "Beyond Meat"),
+            Ingridient(name: "Totato sause"),
+            Ingridient(name: "Onion"),
            ]),
     Meal(name: "Grilled Vegetables",
            ingridients: [
@@ -26,53 +38,106 @@ var testLunch = [
             Ingridient(name: "Mushroom"),
             Ingridient(name: "Paper"),
             Ingridient(name: "Tomato"),
+            Ingridient(name: "Onion"),
+            Ingridient(name: "Garlic"),
+            Ingridient(name: "Broccoli"),
            ]),
     Meal(name: "Veggi Salad",
            ingridients: [
-            Ingridient(name: "tomato"),
-            Ingridient(name: "onion"),
-            Ingridient(name: "paper"),
-            Ingridient(name: "cucumber"),
+            Ingridient(name: "Tomato"),
+            Ingridient(name: "Onion"),
+            Ingridient(name: "Paper"),
+            Ingridient(name: "Cucumber"),
+            Ingridient(name: "Olive Oil"),
            ]),
-    Meal(name: "Tuna with Rice",
+    Meal(name: "Srimp Bowl",
            ingridients: [
-            Ingridient(name: "tuna"),
-            Ingridient(name: "rice"),
+            Ingridient(name: "Srimps"),
+            Ingridient(name: "Quinoa"),
+            Ingridient(name: "Cucumber"),
+            Ingridient(name: "Avocado"),
+            Ingridient(name: "Quail Eggs"),
+            Ingridient(name: "Sesame Sause"),
+            Ingridient(name: "Parsley"),
+           ]),
+    
+    Meal(name: "Lentils Porich + Vegetables stakes",
+           ingridients: [
+            Ingridient(name: "Lentils porich"),
+            Ingridient(name: "Veggi burger stake"),
+           ]),
+    
+    Meal(name: "Veggi Burget",
+           ingridients: [
+            Ingridient(name: "Burger bread"),
+            Ingridient(name: "Burget veggi stake"),
+            Ingridient(name: "Onion"),
+            Ingridient(name: "Tomato"),
+            Ingridient(name: "BBQ Sause"),
            ]),
 ]
 
 var testBreakfast = [
-
-    Meal(name: "Bread with Butter & Cheese",
+    
+    Meal(name: "Eggs + Cheese Sandwitch + Coffe",
            ingridients: [
-            Ingridient(name: "Bread"),
+            Ingridient(name: "Eggs"),
             Ingridient(name: "Butter"),
-            Ingridient(name: "Slices Cheese"),
+            Ingridient(name: "Bread"),
+            Ingridient(name: "Cheese"),
+            Ingridient(name: "Milk Cream"),
+            Ingridient(name: "Coffee"),
            ]),
-    Meal(name: "Granolla with Yogurt and Berries",
+    
+    Meal(name: "Eggs + Avocado Sandwitch + Coffe",
            ingridients: [
-            Ingridient(name: "Granolla"),
-            Ingridient(name: "Yogurt"),
-            Ingridient(name: "Bluberry"),
+            Ingridient(name: "Eggs"),
+            Ingridient(name: "Bread"),
+            Ingridient(name: "Avocado"),
+            Ingridient(name: "Milk Cream"),
+            Ingridient(name: "Coffee"),
+            Ingridient(name: "Parsley"),
            ]),
+    
+    Meal(name: "Hulled Millet Porich",
+           ingridients: [
+            Ingridient(name: "Hulled Millet"),
+            Ingridient(name: "Raisin"),
+            Ingridient(name: "Chia Seeds"),
+            Ingridient(name: "Nuts"),
+           ]),
+
+    Meal(name: "Buckwheat Porich",
+           ingridients: [
+            Ingridient(name: "Buckwheat"),
+            Ingridient(name: "Butter"),
+            Ingridient(name: "Oat Milk"),
+           ]),
+    
 ]
 
 var testDinner = [
 
-    Meal(name: "Hummus with Crackers",
+
+    Meal(name: "Hummus + Crackers",
            ingridients: [
-            Ingridient(name: "cracker"),
-            Ingridient(name: "hummus"),
+            Ingridient(name: "Hummus"),
+            Ingridient(name: "Crackers"),
            ]),
-    Meal(name: "Chips with beer",
-           ingridients: [
-            Ingridient(name: "chips"),
-            Ingridient(name: "beer"),
-           ]),
+    
     Meal(name: "Brie cheese with Wine",
            ingridients: [
             Ingridient(name: "Brie cheese"),
             Ingridient(name: "Wine"),
+            Ingridient(name: "Olives"),
+            Ingridient(name: "Nuts"),
+           ]),
+    
+    Meal(name: "Tea with Cookies",
+           ingridients: [
+            Ingridient(name: "Tea"),
+            Ingridient(name: "Cookies"),
+            Ingridient(name: "Chocolate"),
            ]),
 ]
 
